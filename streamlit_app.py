@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.title("🎈 My first app 🎈")
-
 from openai import OpenAI
 from google.colab import userdata
 import os
@@ -27,4 +25,7 @@ response = client.chat.completions.create(
 ### Print all 10 completions:
 for i in range(10):
   st.write(response.choices[i].message.content)
+
+
+st.title("🎈 My first app 🎈")
 
